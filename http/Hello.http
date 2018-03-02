@@ -2,8 +2,13 @@ GET https://localhost:5001/api/hello/hi
 
 ###
 
+GET http://localhost:5000/api/xsrftoken/get 
+
+###
+
 POST https://localhost:5001/api/hello/who
 Content-Type: application/json
+RequestVerificationToken: CfDJ8D752QSGLIpCjToMpFzPjUu-htEfn4Z5PXlQGjt-w8sMNRipG8jq6kbsBjjlpDlH83XLQQbeph-XSMprXNgbGFj0VjFjhirwCV5SbrR4svdF5sW3sMPVXuXYUAmkx3IP3VCjpFS_Ds1YYWlMc6w3pDo
 
 {
     "name": "wk"

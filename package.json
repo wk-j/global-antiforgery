@@ -1,0 +1,28 @@
+{
+  "name": "globalantiforgery",
+  "version": "1.0.0",
+  "description": "- [Global Antiforgery Token Validation in ASP.NET Core](https://blog.mariusschulz.com/2017/06/11/global-antiforgery-token-validation-in-asp-net-core) - [Anti-Forgery Tokens and ASP.NET Core APIs](https://odetocode.com/blogs/scott/archive/2017/02/06/anti-forgery-tokens-and-asp-net-core-apis.aspx)",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "axios": "^0.18.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "typescript": "^2.7.2"
+  },
+  "scripts": {
+    "start": "parcel --no-cache -d ./src/Antiforgery/wwwroot/ --public-url / client/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wk-j/global-antiforgery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wk-j/global-antiforgery/issues"
+  },
+  "homepage": "https://github.com/wk-j/global-antiforgery#readme"
+}

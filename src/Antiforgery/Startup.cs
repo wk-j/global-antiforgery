@@ -29,13 +29,15 @@ namespace Antiforgery {
         public void Configure(IApplicationBuilder app, IHostingEnvironment env) {
             app.UseAntiforgeryTokens();
 
+            app.UseStaticFiles();
+
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
             } else {
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
             app.UseMvc();
         }
     }
