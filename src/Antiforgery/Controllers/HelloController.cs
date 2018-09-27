@@ -7,16 +7,17 @@ namespace Antiforgery.Controllers {
     }
 
     [Route("api/[controller]/[action]")]
+    [ApiController]
     public class HelloController : ControllerBase {
         [HttpGet()]
-        public dynamic Hi() {
+        public ActionResult<dynamic> Hi() {
             return new {
                 Message = "Hello, world!"
             };
         }
 
         [HttpPost()]
-        public dynamic Who([FromBody] Person person) {
+        public ActionResult<dynamic> Who(Person person) {
             return new {
                 Message = "Who know"
             };

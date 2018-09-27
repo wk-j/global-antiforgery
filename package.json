@@ -8,9 +8,10 @@
     "@types/react": "^16.0.40",
     "@types/react-dom": "^16.0.4",
     "axios": "^0.18.0",
+    "parcel-bundler": "^1.10.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "typescript": "^2.7.2"
+    "typescript": "^2.9.2"
   },
   "scripts": {
     "start": "parcel --no-cache -d ./src/Antiforgery/wwwroot/ --public-url / client/index.html"

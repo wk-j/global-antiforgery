@@ -16,18 +16,14 @@ class App extends React.Component<{}, State> {
         this.state = { message: "?" }
     }
 
-    onClick = async (e) => {
-        try {
-            let rs = await axios.post<{ message: string }>("/api/hello/who", {
-                name: "wk-j"
-            })
-
+    onClick = (e) => {
+        let rs = axios.post<{ message: string }>("/api/hello/who", {
+            name: "wk-j"
+        }).then(rs => {
             this.setState({
                 message: rs.data.message
             });
-        } catch (err) {
-            this.setState({ message: err.message })
-        }
+        })
     }
 
     render() {
